@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakeland Care Services | Assisted Living in Burnsville, Lakeville &amp; Shakopee</title>
+<meta name="description" content="Lakeland Care Services provides 24-hour assisted and customized living in small homes in Burnsville, Lakeville and Shakopee, MN, for older adults and adults on CADI, BI, DD and EW/AC waivers. Referrals by email.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --lake:#1E4D5C;
+    --lake-deep:#16323B;
+    --sky:#DCEBEF;
+    --sand:#EFE8DA;
+    --reed:#7D8B5A;
+    --white:#FCFBF8;
+    --text:#2F444B;
+    --line:#D3DEE1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:'Atkinson Hyperlegible',system-ui,sans-serif;font-size:19px;line-height:1.7;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Libre Caslon Text',Georgia,serif;font-weight:400;color:var(--lake-deep);line-height:1.2}
+  a{color:var(--lake)}
+  a:focus-visible{outline:3px solid var(--reed);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header{background:var(--white);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--lake-deep)}
+  .brand svg{width:40px;height:40px;flex:none}
+  .brand span{font-family:'Libre Caslon Text',Georgia,serif;font-size:1.3rem;white-space:nowrap}
+  .nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+  .nav ul a{text-decoration:none;color:var(--text)}
+  .nav ul a:hover{color:var(--lake)}
+  .nav .cta{background:var(--lake);color:var(--white);padding:10px 20px;border-radius:8px;font-weight:700;white-space:nowrap}
+  .nav .cta:hover{background:var(--lake-deep);color:var(--white)}
+  @media (max-width:820px){.nav ul li.hide{display:none}}
+
+  .hero{background:var(--sky);padding:76px 0 0;overflow:hidden}
+  .hero h1{font-size:clamp(2.3rem,5vw,3.7rem);max-width:17ch;margin-bottom:22px}
+  .hero p.lede{font-size:1.2rem;max-width:50ch;margin-bottom:30px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:inherit;font-weight:700;font-size:1.05rem;text-decoration:none;padding:16px 28px;border-radius:8px;border:2px solid transparent}
+  .btn-lake{background:var(--lake);color:var(--white)}
+  .btn-lake:hover{background:var(--lake-deep)}
+  .btn-out{border-color:var(--lake);color:var(--lake)}
+  .btn-out:hover{background:var(--white)}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .fast{margin-top:18px;font-size:1rem}
+  .shore{display:block;width:100%;height:auto;margin-top:40px}
+  .shore text{font-family:'Libre Caslon Text',Georgia,serif;font-size:22px;fill:var(--lake-deep)}
+  .shore-narrow{display:none}
+  .shore .sub{font-family:'Atkinson Hyperlegible',system-ui,sans-serif;font-size:15px;fill:#4F6870}
+
+  section.s{padding:92px 0}
+  .head{max-width:640px;margin-bottom:44px}
+  .head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:14px}
+  .head p{font-size:1.1rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .list{list-style:none}
+  .list li{padding:18px 0;border-bottom:1px solid var(--line)}
+  .list li:first-child{border-top:1px solid var(--line)}
+  .list h3{font-size:1.3rem;margin-bottom:4px}
+
+  .sand{background:var(--sand)}
+  .waivers{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--white);border:1px solid #DED5C3;border-radius:12px;overflow:hidden}
+  .waivers div{padding:26px 24px}
+  .waivers div+div{border-left:1px solid #DED5C3}
+  .waivers b{display:block;font-family:'Libre Caslon Text',Georgia,serif;font-weight:400;font-size:1.7rem;color:var(--lake);white-space:nowrap}
+  .waivers span{font-size:1rem}
+
+  .steps{list-style:none;counter-reset:n;display:grid;gap:0;max-width:760px}
+  .steps li{counter-increment:n;display:grid;grid-template-columns:64px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+  .steps li::before{content:counter(n);width:48px;height:48px;border-radius:50%;border:2px solid var(--lake);color:var(--lake);font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+  .steps h3{font-size:1.3rem;margin-bottom:2px}
+  .steps li>div{min-width:0;overflow-wrap:anywhere}
+
+  .contact{background:var(--lake-deep);color:#C8DADF;padding:92px 0}
+  .contact h2{color:var(--white);font-size:clamp(2rem,3.8vw,2.8rem);margin-bottom:14px;max-width:18ch}
+  .contact .intro{font-size:1.12rem;max-width:56ch;margin-bottom:40px}
+  .mails{list-style:none;border-top:1px solid rgba(255,255,255,.18)}
+  .mails li{border-bottom:1px solid rgba(255,255,255,.18)}
+  .mails a{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center;padding:26px 0;text-decoration:none}
+  .mails h3{color:var(--white);font-size:1.4rem}
+  .mails p{color:#C8DADF;font-size:1rem}
+  .mails span{display:block;color:var(--sky);font-weight:700;font-size:1.12rem;overflow-wrap:anywhere;margin-top:4px}
+  .mails a:hover span{text-decoration:underline}
+
+  footer{background:#10262D;color:#93AEB5;padding:28px 0;font-size:.95rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#C8DADF}
+
+  @media (max-width:900px){
+    .two{grid-template-columns:1fr;gap:36px}
+    .waivers{grid-template-columns:1fr 1fr}
+    .waivers div:nth-child(3){border-left:0}
+    .waivers div:nth-child(n+3){border-top:1px solid #DED5C3}
+    .mails a{grid-template-columns:1fr;gap:6px}
+  }
+  @media (max-width:600px){
+    body{font-size:18px}
+    .hero{padding-top:48px}
+    section.s,.contact{padding:64px 0}
+    .brand span{font-size:1.1rem}
+    .brand svg{width:34px;height:34px}
+    .waivers{grid-template-columns:1fr}
+    .waivers div+div{border-left:0;border-top:1px solid #DED5C3}
+    .steps li{grid-template-columns:52px 1fr;gap:14px}
+    .shore-wide{display:none}
+    .shore-narrow{display:block}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Lakeland Care Services home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#1E4D5C"/><path d="M8 23c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2" fill="none" stroke="#DCEBEF" stroke-width="2.2" stroke-linecap="round"/><path d="M8 28c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2" fill="none" stroke="#DCEBEF" stroke-width="2.2" stroke-linecap="round" opacity=".6"/><circle cx="20" cy="14" r="4" fill="#EFE8DA"/></svg>
+      <span>Lakeland Care Services</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="hide"><a href="#care">Our care</a></li>
+        <li class="hide"><a href="#process">How referrals work</a></li>
+        <li><a class="cta" href="#contact">Email us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Assisted living in small homes across the South Metro.</h1>
+      <p class="lede">Lakeland Care Services provides 24&#8209;hour assisted and customized living for older adults and adults with disabilities, in comfortable homes in Burnsville, Lakeville and Shakopee.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lake" href="mailto:referrals@lakelandcareservices.com?subject=New%20referral">Email a referral</a>
+        <a class="btn btn-out" href="mailto:openings@lakelandcareservices.com?subject=Current%20openings">Ask about openings</a>
+      </div>
+      <p class="fast">We handle referrals and questions by email. It's the fastest way to get a reply.</p>
+    </div>
+
+    <svg class="shore shore-wide" viewBox="0 0 1200 230" role="img" aria-label="Our homes are in Burnsville, Lakeville and Shakopee">
+      <path d="M0 150 C 180 120, 320 175, 480 150 S 800 115, 960 145 S 1120 165, 1200 140 L1200 230 L0 230Z" fill="#1E4D5C"/>
+      <path d="M0 172 C 200 150, 360 195, 520 172 S 840 145, 1000 168 S 1140 182, 1200 165" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".35"/>
+      <path d="M0 198 C 220 180, 380 215, 560 198 S 860 175, 1020 195 S 1150 205, 1200 192" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".2"/>
+      <g>
+        <line x1="250" y1="62" x2="250" y2="140" stroke="#1E4D5C" stroke-width="2"/>
+        <circle cx="250" cy="140" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
+        <text x="250" y="40" text-anchor="middle">Shakopee</text>
+        <text class="sub" x="250" y="60" text-anchor="middle">Scott County</text>
+      </g>
+      <g>
+        <line x1="600" y1="62" x2="600" y2="128" stroke="#1E4D5C" stroke-width="2"/>
+        <circle cx="600" cy="128" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
+        <text x="600" y="40" text-anchor="middle">Burnsville</text>
+        <text class="sub" x="600" y="60" text-anchor="middle">Dakota County</text>
+      </g>
+      <g>
+        <line x1="950" y1="62" x2="950" y2="142" stroke="#1E4D5C" stroke-width="2"/>
+        <circle cx="950" cy="142" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
+        <text x="950" y="40" text-anchor="middle">Lakeville</text>
+        <text class="sub" x="950" y="60" text-anchor="middle">Dakota County</text>
+      </g>
+    </svg>
+    <svg class="shore shore-narrow" viewBox="0 0 400 200" role="img" aria-label="Our homes are in Burnsville, Lakeville and Shakopee">
+      <path d="M0 130 C 80 110, 150 150, 220 128 S 340 110, 400 125 L400 200 L0 200Z" fill="#1E4D5C"/>
+      <path d="M0 155 C 90 140, 160 170, 240 152 S 350 140, 400 150" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".35"/>
+      <g><line x1="65" y1="58" x2="65" y2="124" stroke="#1E4D5C" stroke-width="2"/><circle cx="65" cy="124" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="65" y="44" text-anchor="middle" style="font-size:17px">Shakopee</text></g>
+      <g><line x1="200" y1="28" x2="200" y2="128" stroke="#1E4D5C" stroke-width="2"/><circle cx="200" cy="128" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="200" y="16" text-anchor="middle" style="font-size:17px">Burnsville</text></g>
+      <g><line x1="335" y1="58" x2="335" y2="118" stroke="#1E4D5C" stroke-width="2"/><circle cx="335" cy="118" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="335" y="44" text-anchor="middle" style="font-size:17px">Lakeville</text></g>
+    </svg>
+  </section>
+
+  <section class="s" id="care">
+    <div class="wrap two">
+      <div class="head" style="margin-bottom:0">
+        <h2>Care that fits each person</h2>
+        <p>Our homes are small, so staff get to know each resident well. Care is planned with the resident, their family and their case manager, and changes as their needs do.</p>
+        <p style="margin-top:14px">Staff are on site 24 hours a day, every day.</p>
+      </div>
+      <ul class="list">
+        <li><h3>Personal care</h3><p>Help with bathing, dressing, grooming and getting around the home safely.</p></li>
+        <li><h3>Medication assistance</h3><p>Trained staff keep medications on schedule and watch for changes in health.</p></li>
+        <li><h3>Meals and daily routines</h3><p>Home-cooked meals and help with the routines that make a day feel normal.</p></li>
+        <li><h3>Appointments and outings</h3><p>Help getting to medical visits, family events and activities in the community.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="s sand">
+    <div class="wrap">
+      <div class="head">
+        <h2>Waivers we accept</h2>
+        <p>We provide residential and in-home support for people funded through these Minnesota programs.</p>
+      </div>
+      <div class="waivers">
+        <div><b>EW / AC</b><span>Elderly Waiver and Alternative Care</span></div>
+        <div><b>CADI</b><span>Community Access for Disability Inclusion</span></div>
+        <div><b>BI</b><span>Brain Injury waiver</span></div>
+        <div><b>DD</b><span>Developmental Disabilities waiver</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="process">
+    <div class="wrap">
+      <div class="head">
+        <h2>How referrals work</h2>
+        <p>Every step happens by email, so families and case managers always have a written record.</p>
+      </div>
+      <ol class="steps">
+        <li><div><h3>Email the referral</h3><p>Send the person's details, waiver type and support plan to referrals@<wbr>lakelandcareservices.com.</p></div></li>
+        <li><div><h3>We review it</h3><p>We look at care needs and preferred city, and check them against our current openings.</p></div></li>
+        <li><div><h3>We reply with next steps</h3><p>If there's a good fit, we set up a visit to the home.</p></div></li>
+        <li><div><h3>Move-in</h3><p>We agree a move-in date with the family and case manager and handle the paperwork together.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Email us for the fastest reply.</h2>
+      <p class="intro">We don't take referrals by phone. Choose the address that matches what you need, and we'll answer by email.</p>
+      <ul class="mails">
+        <li><a href="mailto:referrals@lakelandcareservices.com?subject=New%20referral"><div><h3>Send a referral</h3><p>For case managers and families referring someone new.</p></div><span>referrals@<wbr>lakelandcareservices.com</span></a></li>
+        <li><a href="mailto:openings@lakelandcareservices.com?subject=Current%20openings"><div><h3>Check openings</h3><p>Ask which homes have a room available now.</p></div><span>openings@<wbr>lakelandcareservices.com</span></a></li>
+        <li><a href="mailto:info@lakelandcareservices.com"><div><h3>General questions</h3><p>Services, waivers, visits or anything else.</p></div><span>info@<wbr>lakelandcareservices.com</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="y">2026</span> Lakeland Care Services. Burnsville, Lakeville &amp; Shakopee, Minnesota.</span>
+    <a href="mailto:info@lakelandcareservices.com">info@<wbr>lakelandcareservices.com</a>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
