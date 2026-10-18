@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lakeland Care Services | Assisted Living in Burnsville, Lakeville &amp; Shakopee</title>
-<meta name="description" content="Lakeland Care Services provides 24-hour assisted and customized living in small homes in Burnsville, Lakeville and Shakopee, MN, for older adults and adults on CADI, BI, DD and EW/AC waivers. Referrals by email.">
+<title>Lakeland Care Services | Assisted &amp; Customized Living Homes in the Twin Cities</title>
+<meta name="description" content="Lakeland Care Services provides 24-hour assisted and customized living in small homes in eight Twin Cities metro cities, for older adults and adults on CADI, BI, DD and EW/AC waivers. Referrals by email.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
@@ -53,6 +53,9 @@
   .shore{display:block;width:100%;height:auto;margin-top:40px}
   .shore text{font-family:'Libre Caslon Text',Georgia,serif;font-size:22px;fill:var(--lake-deep)}
   .shore-narrow{display:none}
+  .towns-m{display:none;list-style:none;flex-wrap:wrap;gap:8px;margin-top:26px}
+  .towns-m li{background:var(--white);color:var(--lake-deep);font-weight:700;font-size:.95rem;padding:6px 14px;border-radius:999px}
+  .shore text{font-size:20px}
   .shore .sub{font-family:'Atkinson Hyperlegible',system-ui,sans-serif;font-size:15px;fill:#4F6870}
 
   section.s{padding:92px 0}
@@ -65,6 +68,9 @@
   .list li{padding:18px 0;border-bottom:1px solid var(--line)}
   .list li:first-child{border-top:1px solid var(--line)}
   .list h3{font-size:1.3rem;margin-bottom:4px}
+  .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px}
+  .opts li,.opts li:first-child{border-top:2px solid var(--lake);border-bottom:0}
+  @media (max-width:900px){.opts{grid-template-columns:1fr}.opts li,.opts li:first-child{border-top:1px solid var(--line)}}
 
   .sand{background:var(--sand)}
   .waivers{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--white);border:1px solid #DED5C3;border-radius:12px;overflow:hidden}
@@ -112,6 +118,7 @@
     .steps li{grid-template-columns:52px 1fr;gap:14px}
     .shore-wide{display:none}
     .shore-narrow{display:block}
+    .towns-m{display:flex}
   }
 </style>
 </head>
@@ -136,44 +143,32 @@
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <h1>Assisted living in small homes across the South Metro.</h1>
-      <p class="lede">Lakeland Care Services provides 24&#8209;hour assisted and customized living for older adults and adults with disabilities, in comfortable homes in Burnsville, Lakeville and Shakopee.</p>
+      <h1>Assisted living in small homes across the metro.</h1>
+      <p class="lede">Lakeland Care Services provides 24&#8209;hour assisted and customized living for older adults and adults with disabilities. Our homes are in eight cities, with options for adults 55+ and 18+.</p>
       <div class="hero-actions">
         <a class="btn btn-lake" href="mailto:referrals@lakelandcareservices.com?subject=New%20referral">Email a referral</a>
         <a class="btn btn-out" href="mailto:openings@lakelandcareservices.com?subject=Current%20openings">Ask about openings</a>
       </div>
       <p class="fast">We handle referrals and questions by email. It's the fastest way to get a reply.</p>
+      <ul class="towns-m" aria-label="Cities with Lakeland homes"><li>Shakopee</li><li>Champlin</li><li>Ramsey</li><li>Burnsville</li><li>Lakeville</li><li>Oakdale</li><li>Cottage Grove</li><li>Hastings</li></ul>
     </div>
 
-    <svg class="shore shore-wide" viewBox="0 0 1200 230" role="img" aria-label="Our homes are in Burnsville, Lakeville and Shakopee">
+    <svg class="shore shore-wide" viewBox="0 0 1200 230" role="img" aria-label="Our homes are in Shakopee, Champlin, Ramsey, Burnsville, Lakeville, Oakdale, Cottage Grove and Hastings">
       <path d="M0 150 C 180 120, 320 175, 480 150 S 800 115, 960 145 S 1120 165, 1200 140 L1200 230 L0 230Z" fill="#1E4D5C"/>
       <path d="M0 172 C 200 150, 360 195, 520 172 S 840 145, 1000 168 S 1140 182, 1200 165" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".35"/>
       <path d="M0 198 C 220 180, 380 215, 560 198 S 860 175, 1020 195 S 1150 205, 1200 192" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".2"/>
-      <g>
-        <line x1="250" y1="62" x2="250" y2="140" stroke="#1E4D5C" stroke-width="2"/>
-        <circle cx="250" cy="140" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
-        <text x="250" y="40" text-anchor="middle">Shakopee</text>
-        <text class="sub" x="250" y="60" text-anchor="middle">Scott County</text>
-      </g>
-      <g>
-        <line x1="600" y1="62" x2="600" y2="128" stroke="#1E4D5C" stroke-width="2"/>
-        <circle cx="600" cy="128" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
-        <text x="600" y="40" text-anchor="middle">Burnsville</text>
-        <text class="sub" x="600" y="60" text-anchor="middle">Dakota County</text>
-      </g>
-      <g>
-        <line x1="950" y1="62" x2="950" y2="142" stroke="#1E4D5C" stroke-width="2"/>
-        <circle cx="950" cy="142" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/>
-        <text x="950" y="40" text-anchor="middle">Lakeville</text>
-        <text class="sub" x="950" y="60" text-anchor="middle">Dakota County</text>
-      </g>
+      <g><line x1="80" y1="44" x2="80" y2="142" stroke="#1E4D5C" stroke-width="2"/><circle cx="80" cy="142" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="80" y="34" text-anchor="middle">Shakopee</text></g>
+      <g><line x1="225" y1="86" x2="225" y2="146" stroke="#1E4D5C" stroke-width="2"/><circle cx="225" cy="146" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="225" y="76" text-anchor="middle">Champlin</text></g>
+      <g><line x1="370" y1="44" x2="370" y2="157" stroke="#1E4D5C" stroke-width="2"/><circle cx="370" cy="157" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="370" y="34" text-anchor="middle">Ramsey</text></g>
+      <g><line x1="515" y1="86" x2="515" y2="145" stroke="#1E4D5C" stroke-width="2"/><circle cx="515" cy="145" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="515" y="76" text-anchor="middle">Burnsville</text></g>
+      <g><line x1="660" y1="44" x2="660" y2="130" stroke="#1E4D5C" stroke-width="2"/><circle cx="660" cy="130" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="660" y="34" text-anchor="middle">Lakeville</text></g>
+      <g><line x1="805" y1="86" x2="805" y2="128" stroke="#1E4D5C" stroke-width="2"/><circle cx="805" cy="128" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="805" y="76" text-anchor="middle">Oakdale</text></g>
+      <g><line x1="950" y1="44" x2="950" y2="143" stroke="#1E4D5C" stroke-width="2"/><circle cx="950" cy="143" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="950" y="34" text-anchor="middle">Cottage Grove</text></g>
+      <g><line x1="1095" y1="86" x2="1095" y2="163" stroke="#1E4D5C" stroke-width="2"/><circle cx="1095" cy="163" r="7" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="1095" y="76" text-anchor="middle">Hastings</text></g>
     </svg>
-    <svg class="shore shore-narrow" viewBox="0 0 400 200" role="img" aria-label="Our homes are in Burnsville, Lakeville and Shakopee">
-      <path d="M0 130 C 80 110, 150 150, 220 128 S 340 110, 400 125 L400 200 L0 200Z" fill="#1E4D5C"/>
-      <path d="M0 155 C 90 140, 160 170, 240 152 S 350 140, 400 150" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".35"/>
-      <g><line x1="65" y1="58" x2="65" y2="124" stroke="#1E4D5C" stroke-width="2"/><circle cx="65" cy="124" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="65" y="44" text-anchor="middle" style="font-size:17px">Shakopee</text></g>
-      <g><line x1="200" y1="28" x2="200" y2="128" stroke="#1E4D5C" stroke-width="2"/><circle cx="200" cy="128" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="200" y="16" text-anchor="middle" style="font-size:17px">Burnsville</text></g>
-      <g><line x1="335" y1="58" x2="335" y2="118" stroke="#1E4D5C" stroke-width="2"/><circle cx="335" cy="118" r="6" fill="#EFE8DA" stroke="#1E4D5C" stroke-width="3"/><text x="335" y="44" text-anchor="middle" style="font-size:17px">Lakeville</text></g>
+    <svg class="shore shore-narrow" viewBox="0 0 400 90" aria-hidden="true">
+      <path d="M0 30 C 80 10, 150 50, 220 28 S 340 10, 400 25 L400 90 L0 90Z" fill="#1E4D5C"/>
+      <path d="M0 55 C 90 40, 160 70, 240 52 S 350 40, 400 50" fill="none" stroke="#DCEBEF" stroke-width="2" opacity=".35"/>
     </svg>
   </section>
 
@@ -208,6 +203,20 @@
     </div>
   </section>
 
+  <section class="s" id="homes">
+    <div class="wrap">
+      <div class="head">
+        <h2>Find the right home</h2>
+        <p>Each home is set up a little differently. Tell us in your referral what the person needs, and we'll match them to the right one.</p>
+      </div>
+      <ul class="list opts">
+        <li><h3>Age groups</h3><p>Homes for adults 55+ and homes for adults 18+.</p></li>
+        <li><h3>Pets</h3><p>Pet-friendly homes and no-pet homes.</p></li>
+        <li><h3>Accessibility</h3><p>Wheelchair-accessible homes and standard homes.</p></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="s" id="process">
     <div class="wrap">
       <div class="head">
@@ -215,7 +224,7 @@
         <p>Every step happens by email, so families and case managers always have a written record.</p>
       </div>
       <ol class="steps">
-        <li><div><h3>Email the referral</h3><p>Send the person's details, waiver type and support plan to referrals@<wbr>lakelandcareservices.com.</p></div></li>
+        <li><div><h3>Email the referral</h3><p>Send the person's details, waiver type, home needs and support plan to referrals@<wbr>lakelandcareservices.com.</p></div></li>
         <li><div><h3>We review it</h3><p>We look at care needs and preferred city, and check them against our current openings.</p></div></li>
         <li><div><h3>We reply with next steps</h3><p>If there's a good fit, we set up a visit to the home.</p></div></li>
         <li><div><h3>Move-in</h3><p>We agree a move-in date with the family and case manager and handle the paperwork together.</p></div></li>
@@ -238,7 +247,7 @@
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="y">2026</span> Lakeland Care Services. Burnsville, Lakeville &amp; Shakopee, Minnesota.</span>
+    <span>&copy; <span id="y">2026</span> Lakeland Care Services. Twin Cities metro, Minnesota.</span>
     <a href="mailto:info@lakelandcareservices.com">info@<wbr>lakelandcareservices.com</a>
   </div>
 </footer>
